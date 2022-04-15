@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["DOM", "DOM.Iterable", "ESNext", "ScriptHost"],
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -14,18 +14,14 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "noEmit": true,
-
     "incremental": true
   },
   "ts-node": {
     "compilerOptions": {
-      "module": "commonjs"
+      "module": "ES2020"
     }
   },
-  "baseUrl": "./",
-  "paths": {
-    "@/*": ["src/*"]
-  },
+
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "tailwind.config.js"]
 }
